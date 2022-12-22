@@ -12,8 +12,12 @@
 <body>
 
     @include('partials.header')
+    @include('partials.jumbotron')
     <!-- vengono iniettati tutti i contenuti delle pagine -->
     @yield('content')
+
+    @include('partials.footer')
+
 
 </body>
 </html>

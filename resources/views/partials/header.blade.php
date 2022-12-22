@@ -5,7 +5,8 @@
 
     <nav>
         <ul>
-          <a class="{{ Route::CurrentRouteName() === 'personaggi' ? 'active' : '' }}" href="{{ route('personaggi') }}"><li>CHARACTERS</li></a>
+            <a class="{{ Route::CurrentRouteName() === 'home' ? 'active ' : '' }}" href="{{ route('home') }}"><li>HOME</li></a>
+          <a class="{{ Route::CurrentRouteName() === 'personaggi' ? 'active ' : '' }}" href="{{ route('personaggi') }}"><li>CHARACTERS</li></a>
           <a class="{{ Route::CurrentRouteName() === 'fumetti' ? 'active' : '' }}" href="{{ route('fumetti') }}"><li>COMICS</li></a>
           <a class="{{ Route::CurrentRouteName() === 'film' ? 'active' : '' }}" href="{{ route('film') }}">
             <li>MOVIES</li></a>

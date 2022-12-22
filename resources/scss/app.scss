@@ -51,7 +51,7 @@ header{
     height: 120px;
     display: flex;
     justify-content: space-between;
-    @include centerFlex('vertical');
+    align-items: center !important;
     .logo{
       margin-right: 100px;
       width: 100px;
@@ -62,11 +62,13 @@ header{
     ul{
       display: flex;
       .active{
-        border-bottom: 5px solid $Primary_Color;
+        display: none;
         }
       li{
         padding: 47px 10px;
+        border-bottom: 5px solid white;
         &:hover{
+          border-bottom: 5px solid $Primary_Color;
         }
         &:hover a{
           color:$Primary_Color;
@@ -78,5 +80,136 @@ header{
           }
 
       }
+    }
+}
+
+/* JUMBOTRON */
+.ft-container-fluid{
+    height: 400px;
+    width: 100vw;
+    background-color: blue;
+    overflow: hidden;
+    img{
+        object-fit: contain;
+    }
+}
+
+/* MAIN */
+
+main{
+    background-color: #1C1C1C;
+    color:white;
+    font-size: 2.3rem;
+    padding: 40px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    h4{
+      background-color: $Primary_Color;
+      color:white;
+      font-size: .9rem;
+      width: calc(100% / 6);
+      text-align: center;
+      padding: 14px 0px;
+      &:hover{
+        cursor: pointer;
+        background-color: white;
+        color:$Primary_Color;
+      }
+    }
+  }
+  .container{
+    position: relative;
+    .current{
+      position: absolute;
+      top: -80px;
+      left: -60px;
+      justify-content: center;;
+      align-items: center;
+      h4{
+        font-size: .9rem;
+        width: 160px;
+        text-align: center;
+        padding: 14px 0px;
+
+      }
+    }
+}
+/* CARDS */
+
+.card{
+    flex-direction: column;
+    width: calc(100% / 6 - 10px);
+    padding-right: 10px;
+    .img{
+        width: 185px;
+        height: 185px;
+        overflow: hidden;
+        img{
+            object-fit: contain;
+            overflow: hidden;
+            transform: scale(1.1);
+        }
+    }
+    h4{
+        color: white;
+        font-size: .9rem;
+        padding: 15px 0px;
+    }
+}
+
+
+
+/* FOOTER */
+footer{
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px 0px;
+    position: relative;
+    box-shadow: 18px 36px 22px -26px rgba(0,0,0,0.84) inset;
+  }
+  h4{
+    color: white;
+    font-size: 1.2rem;
+    padding-bottom: 10px
+  }
+
+  .container{
+    display: flex;
+    align-items: flex-start;
+    ul{
+      padding-bottom: 10px;
+      margin-right: 20px;
+      li{
+        margin: 2px 0px;
+        a{
+          text-transform: capitalize;
+          color: #7F7F7F;
+          font-size: .8rem;
+          &:hover{
+            color: white;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .layer{
+    position: absolute;
+    bottom: -50px;
+    right: 250px;
+    img{
+      width: 95%;
     }
 }
