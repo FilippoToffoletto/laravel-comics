@@ -16,8 +16,9 @@
     <!-- vengono iniettati tutti i contenuti delle pagine -->
     @yield('content')
 
-    @include('partials.findUs')
+    @include('partials.dcBar')
     @include('partials.footer')
+    @include('partials.findUs')
 
 
 </body>

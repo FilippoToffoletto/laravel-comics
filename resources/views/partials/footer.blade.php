@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div class="footer">
       <!-- DC COMICS -->
       <div class="col">
         <nav>

@@ -1,14 +1,19 @@
-<div class="find-us">
-    <nav>
+<section>
     <div class="container">
+    <div class="left">
+      <div class="btn"><h3>sing-up now</h3></div>
+    </div>
+    <div class="right">
+      <h3>follow us</h3>
+
       <ul>
         <li>
           <div class="img">
-            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="Digital Comics">
+            <img src="{{ Vite::asset('resources/img/footer-facebook.png')}}" alt="Facebook">
           </div>
-          <a href="#">Digital Comics</a>
         </li>
       </ul>
+
     </div>
-  </nav>
-</div>
+  </div>
+</section>
