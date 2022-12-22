@@ -16,6 +16,7 @@
     <!-- vengono iniettati tutti i contenuti delle pagine -->
     @yield('content')
 
+    @include('partials.findUs')
     @include('partials.footer')
 
 
