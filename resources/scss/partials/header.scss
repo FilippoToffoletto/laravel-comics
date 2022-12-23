@@ -1,0 +1,50 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+/* HEADER */
+header{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    .logo{
+      margin-right: 100px;
+      width: 100px;
+      img{
+        width: 80px;
+      }
+    }
+    ul{
+      display: flex;
+      .active{
+        display: none;
+        }
+      li{
+        padding: 47px 10px;
+        border-bottom: 5px solid white;
+        &:hover{
+          border-bottom: 5px solid $Primary_Color;
+        }
+        &:hover a{
+          color:$Primary_Color;
+        }
+        a{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.9rem;
+          }
+
+      }
+    }
+}
+
+/* JUMBOTRON */
+.ft-container-fluid{
+    height: 400px;
+    width: 100vw;
+    background-color: blue;
+    overflow: hidden;
+    img{
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,108 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+
+/* MAIN */
+
+main{
+    background-color: #1C1C1C;
+    color:white;
+    font-size: 2.3rem;
+    padding: 40px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+    .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    h4{
+      background-color: $Primary_Color;
+      color:white;
+      font-size: .9rem;
+      width: calc(100% / 6);
+      text-align: center;
+      padding: 14px 0px;
+      &:hover{
+        cursor: pointer;
+        background-color: white;
+        color:$Primary_Color;
+      }
+    }
+  }
+  .container{
+    position: relative;
+    .current{
+      position: absolute;
+      top: -80px;
+      left: -60px;
+      justify-content: center;;
+      align-items: center;
+      h4{
+        font-size: .9rem;
+        width: 160px;
+        text-align: center;
+        padding: 14px 0px;
+
+      }
+    }
+}
+/* CARDS */
+
+.card{
+    flex-direction: column;
+    width: calc(100% / 6 - 10px);
+    padding-right: 10px;
+    .img{
+        width: 185px;
+        height: 185px;
+        overflow: hidden;
+        img{
+            object-fit: contain;
+            overflow: hidden;
+            transform: scale(1.1);
+        }
+    }
+    h4{
+        color: white;
+        font-size: .9rem;
+        padding: 15px 0px;
+    }
+}
+
+/* FIND US */
+.find-us{
+    nav{
+    background-color: $Primary_Color;
+    color: white;
+    padding: 20px 0px;
+  }
+  .container{
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: calc(100% / 5);
+          text-transform: uppercase;
+          .img{
+            width: 600px;
+            img{
+              transform: scale(.6);
+            }
+          }
+          a{
+            color: white;
+            font-size: .9rem;
+          }
+        }
+      }
+  }
+}

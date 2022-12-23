@@ -13,9 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+/* ROTTA DB */
+
+
+
+
+
+//rotte pagine
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
 
 
 Route::get('/personaggi', function(){
@@ -27,7 +37,10 @@ Route::get('/collezionabili', function(){
 })->name('collezionabili');
 
 Route::get('/fumetti', function(){
-    return view('comics');
+
+    $comics=config('db.comics');
+
+    return view('comics', compact('comics'));
 })->name('fumetti');
 
 Route::get('/fans', function(){
