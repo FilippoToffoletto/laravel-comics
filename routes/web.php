@@ -43,6 +43,8 @@ Route::get('/fumetti', function(){
     return view('comics', compact('comics'));
 })->name('fumetti');
 
+
+
 Route::get('/fans', function(){
     return view('fans');
 })->name('fans');
@@ -70,3 +72,12 @@ Route::get('/tv', function(){
 Route::get('/video', function(){
     return view('videos');
 })->name('video');
+
+Route::get('/dettaglio-fumetto/{id}', function($id){
+
+    $comics = config('db.comics');
+    $comics_get = array_filter($comics, fn($item) => $item['id'] == $id);
+    $comic = $comics_get[array_key_first($comics_get)];
+
+    return view('comic_detail', compact('comic'));
+})->name('comic_detail');

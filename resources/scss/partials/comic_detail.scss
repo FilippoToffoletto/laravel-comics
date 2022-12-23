@@ -1,0 +1,43 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.card-detail{
+    font-size: 1.4rem;
+    .col{
+        max-width: 60%;
+    }
+    .img{
+        img{
+            margin: 10px 0;
+            transform: scale(1);
+            object-fit:cover;
+            height: 400px;
+        }
+    }
+    h1{
+        font-size: 2rem;
+        padding-bottom: 5px;
+    }
+    h5{
+        color: white;
+        text-transform: capitalize;
+        padding-bottom: 5px;
+    }
+    p{
+        font-size: 1rem;
+        width: 80%;
+        max-width: 900px;
+        text-align: justify;
+        padding-bottom: 5px;
+    }
+    ul{
+        font-size: 1rem;
+        padding: 10px 0;
+        height: 100px;
+        overflow: scroll;
+        li{
+            padding-bottom: 3px;
+        }
+    }
+
+}
