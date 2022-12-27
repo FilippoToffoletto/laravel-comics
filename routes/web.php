@@ -75,6 +75,7 @@ Route::get('/video', function(){
 
 Route::get('/dettaglio-fumetto/{id}', function($id){
 
+    /* prendo array che mi interessa */
     $comics = config('db.comics');
     $comics_get = array_filter($comics, fn($item) => $item['id'] == $id);
     $comic = $comics_get[array_key_first($comics_get)];

@@ -82,8 +82,8 @@ main{
     }
 }
 
-/* FIND US */
-.find-us{
+/* DC-BAR */
+.dc-bar{
     nav{
     background-color: $Primary_Color;
     color: white;
@@ -114,3 +114,32 @@ main{
       }
   }
 }
+
+/* FIND-US */
+
+.find-us{
+  .container{
+    .btn:hover{
+      cursor: pointer;
+      background-color: white;
+      h3{
+          color: $Primary_Color;
+      }
+    }
+    .right{
+      li{
+        img{
+          &:hover{
+            background-color: $Primary_Color;
+            border-radius: 50%;
+            transform: scale(1.2);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

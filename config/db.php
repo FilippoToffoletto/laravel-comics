@@ -272,7 +272,30 @@ return [
             "route_name"=> 'shop',
             "text"=> 'SHOP'
         ],
-    ]
+    ],
+        "socials" => [
+            [
+                "name" => 'Facebook',
+                "thumb" => './img/footer-facebook.png'
+            ],
+            [
+                "name" => 'Twitter',
+                "thumb" => 'footer-twitter.png'
+            ],
+            [
+                "name" => 'Youtube',
+                "thumb" => 'footer-youtube.png'
+            ],
+            [
+                "name" => 'Pinterest',
+                "thumb" => 'footer-pinterest.png'
+            ],
+            [
+                "name" => 'Periscope',
+                "thumb" => 'footer-periscope.png'
+            ]
+        ]
+
 
 ]
 

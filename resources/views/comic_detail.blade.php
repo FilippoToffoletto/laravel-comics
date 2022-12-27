@@ -33,6 +33,5 @@
 
             </div>
         </div>
-        <div class="btn"><h4>load more</h4></div>
     </main>
 @endsection

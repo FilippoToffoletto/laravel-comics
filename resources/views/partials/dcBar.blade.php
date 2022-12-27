@@ -1,4 +1,4 @@
-<div class="find-us">
+<div class="dc-bar">
     <nav>
     <div class="container">
       <ul>
